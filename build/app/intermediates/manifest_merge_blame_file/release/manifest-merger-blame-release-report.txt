@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_mobile_bx"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:3:8-24:15
+12
+13        <!-- If your app opens https URLs -->
+14        <intent>
+14-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:5:9-8:18
+15            <action android:name="android.intent.action.VIEW" />
+15-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:6:13-65
+15-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:6:21-62
+16
+17            <data android:scheme="https" />
+17-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:7:13-44
+17-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:7:19-41
+18        </intent>
+19        <!-- If your app makes calls -->
+20        <!--
+21        <intent>
+22            <action android:name="android.intent.action.DIAL" />
+23            <data android:scheme="tel" />
+24        </intent>
+25        -->
+26        <!-- If your sends SMS messages -->
+27        <!--
+28        <intent>
+29            <action android:name="android.intent.action.SENDTO" />
+30            <data android:scheme="smsto" />
+31        </intent>
+32        -->
+33        <!-- If your app sends emails -->
+34        <intent>
+34-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:20:9-23:18
+35            <action android:name="android.intent.action.SEND" />
+35-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:21:13-65
+35-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:21:21-62
+36
+37            <data android:mimeType="*/*" />
+37-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:7:13-44
+37-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:22:19-41
+38        </intent>
+39    </queries>
+40
+41    <uses-permission android:name="android.permission.INTERNET" />
+41-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:25:5-66
+41-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:25:22-64
+42    <uses-permission android:name="android.permission.VIBRATE" />
+42-->[:vibration] C:\work\git\blinkx\mobile-bx\build\vibration\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-66
+42-->[:vibration] C:\work\git\blinkx\mobile-bx\build\vibration\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-63
+43
+44    <application
+45        android:name="android.app.Application"
+45-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:28:9-42
+46        android:allowBackup="false"
+46-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:30:9-36
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.6.0] C:\Users\mohit\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+48        android:extractNativeLibs="false"
+49        android:fullBackupContent="false"
+49-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:31:9-42
+50        android:icon="@mipmap/ic_launcher"
+50-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:29:9-43
+51        android:label="Blink X" >
+51-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:27:9-32
+52        <activity
+52-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:32:9-52:20
+53            android:name="com.example.flutter_mobile_bx.MainActivity"
+53-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:33:13-41
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:37:13-163
+55            android:exported="true"
+55-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:34:13-36
+56            android:hardwareAccelerated="true"
+56-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:38:13-47
+57            android:launchMode="singleTop"
+57-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:35:13-43
+58            android:theme="@style/LaunchTheme"
+58-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:36:13-47
+59            android:windowSoftInputMode="adjustResize" >
+59-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:39:13-55
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+67-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:44:13-47:17
+68                android:name="io.flutter.embedding.android.NormalTheme"
+68-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:45:15-70
+69                android:resource="@style/NormalTheme" />
+69-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:46:15-52
+70
+71            <intent-filter>
+71-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:48:13-51:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:49:17-68
+72-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:49:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:50:17-76
+74-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:50:27-74
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+81-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:55:9-57:33
+82            android:name="flutterEmbedding"
+82-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:56:13-44
+83            android:value="2" />
+83-->C:\work\git\blinkx\mobile-bx\android\app\src\main\AndroidManifest.xml:57:13-30
+84
+85        <activity
+85-->[:url_launcher_android] C:\work\git\blinkx\mobile-bx\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+86            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+86-->[:url_launcher_android] C:\work\git\blinkx\mobile-bx\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+87            android:exported="false"
+87-->[:url_launcher_android] C:\work\git\blinkx\mobile-bx\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+88            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+88-->[:url_launcher_android] C:\work\git\blinkx\mobile-bx\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+89
+90        <uses-library
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\mohit\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+91            android:name="androidx.window.extensions"
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\mohit\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0-beta04] C:\Users\mohit\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+93        <uses-library
+93-->[androidx.window:window:1.0.0-beta04] C:\Users\mohit\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+94            android:name="androidx.window.sidecar"
+94-->[androidx.window:window:1.0.0-beta04] C:\Users\mohit\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0-beta04] C:\Users\mohit\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+96    </application>
+97
+98</manifest>
